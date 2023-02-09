@@ -1,0 +1,35 @@
+.footer {
+	margin-bottom: 3rem;
+	&__text {
+		color: $color-gray;
+		font-size: 0.8rem;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	&__link {
+		background-color: $color-purple;
+		border-radius: 0.25rem;
+		color: $color-white;
+		width: 250px;
+		margin: 0 auto 1rem;
+		padding: 10px 20px 13px;
+		transition: 0.4s all;
+	}
+
+	&__link:hover,
+	&__link:focus {
+		background-color: $color-white;
+		color: $color-purple;
+	}
+
+	&__span {
+		color: $color-yellow;
+		transition: 0.4s all;
+	}
+
+	&__link:hover &__span,
+	&__link:focus &__span {
+		color: $color-secondary;
+	}
+}

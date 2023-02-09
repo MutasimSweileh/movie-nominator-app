@@ -1,0 +1,92 @@
+.popup-content {
+	background-color: $color-white;
+	border: 1px solid $color-secondary;
+	min-width: 270px;
+	border-radius: 0.5rem;
+	padding-bottom: 1rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.popup {
+	&__header,
+	&__submit-message {
+		background-color: $color-secondary;
+		border-radius: 0.4rem 0.4rem 0 0;
+		color: $color-yellow;
+		text-align: center;
+		margin-bottom: 1rem;
+		padding: 10px 20px 15px;
+	}
+
+	&__title,
+	&__article,
+	&__submit-message {
+		font-size: 0.9rem;
+		text-align: center;
+		@media (max-width: $small-breakpoint) {
+			font-size: 0.8rem;
+		}
+		@media (max-width: $x-small-breakpoint) {
+			font-size: 0.6rem;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 2rem;
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+
+	&__custom-btn {
+		border: 1px solid $color-purple !important;
+		background-color: $color-purple !important;
+		color: $color-white !important;
+		font-family: $font-body !important;
+		font-size: 0.5rem !important;
+		font-weight: bold !important;
+		margin-top: 1rem !important;
+		width: 100px;
+		transition: 0.4s all !important;
+	}
+
+	&__custom-btn:hover {
+		background-color: $color-secondary !important;
+		border: 1px solid $color-secondary !important;
+	}
+
+	&__custom-btn:first-child {
+		margin-right: 10px;
+	}
+
+	&__custom-btn:last-child {
+		margin-left: 10px;
+	}
+
+	&__close-btn {
+		justify-content: center !important;
+	}
+
+	&__nominated-list {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		padding: 0 2rem;
+		margin-top: 1rem;
+	}
+
+	&__nominated-title {
+		display: flex;
+		align-items: flex-end;
+		font-size: 0.6rem;
+		font-weight: bold;
+		line-height: 20px;
+		text-align: left;
+		padding-top: 0.3rem;
+		@media (max-width: $small-breakpoint) {
+			font-size: 0.4rem;
+		}
+	}
+}

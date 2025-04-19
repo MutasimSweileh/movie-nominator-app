@@ -1,6 +1,5 @@
 # Welcome to Viva Cinema app
 ![](docs/animated-banner.gif)
-[Live Demo](https://vivacinema.netlify.app/)
 
 ## 🎟 Description:
 A film nomination web app for movie lovers allowing them to search for their favorite movies, select and add the top 5 titles, and submit their nomination list.
